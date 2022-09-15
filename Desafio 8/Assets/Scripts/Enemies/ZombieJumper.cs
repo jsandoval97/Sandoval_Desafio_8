@@ -18,7 +18,7 @@ public class ZombieJumper : Zombie
 
     private void JumpZombie()
     {
-        Debug.Log("Saltando")
+        Debug.Log("Saltando");
         rbEnemy.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }
 }

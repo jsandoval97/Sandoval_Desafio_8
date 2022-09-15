@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4727134298771794343}
   - component: {fileID: 4727134298771794340}
   - component: {fileID: 4727134298771794341}
-  - component: {fileID: 4727134298771794330}
-  - component: {fileID: 1801517099}
+  - component: {fileID: 1159932199}
+  - component: {fileID: 1159932198}
   m_Layer: 0
   m_Name: Enemy B
   m_TagString: Untagged
@@ -96,27 +96,28 @@ CapsuleCollider:
   m_GameObject: {fileID: 4727134298771794331}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4727134298771794330
-MonoBehaviour:
+--- !u!54 &1159932199
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4727134298771794331}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0ab20630e7c0b44084e8db952cbc787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  direction: {x: 0, y: 0, z: 1}
-  speed: 2
-  liveTime: 20
---- !u!114 &1801517099
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
+--- !u!114 &1159932198
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -125,12 +126,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4727134298771794331}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d499df0afeb9fa4e883b8025d819478, type: 3}
+  m_Script: {fileID: 11500000, guid: 05fdaaea86aeb5d4baaf8fc5cf233312, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  zombieType: 1
-  playerTransform: {fileID: 0}
+  zombieData: {fileID: 11400000, guid: ef1d3fdb89279ad44ad268dfa4e3e5d4, type: 2}
+  jumpForce: 2
 --- !u!1001 &1598397556308150575
 PrefabInstance:
   m_ObjectHideFlags: 0

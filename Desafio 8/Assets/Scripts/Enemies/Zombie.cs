@@ -27,9 +27,9 @@ public class Zombie : MonoBehaviour
     public void Attack()
     {
         RaycastHit hit;
-        if(Physics.Raycast(transform.position + Vector3.up, transform.TransformDirection(Vector3.forward), out hit, zombieDAta.RangeAttack)){
+        if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, zombieData.RangeAttack)){
             if(hit.transform.CompareTag("Player")){
-                Debug.Log("Atacar al jugador")
+                Debug.Log("Atacar al jugador");
             }
         }
     }

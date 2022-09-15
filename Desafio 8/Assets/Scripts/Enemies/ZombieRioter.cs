@@ -16,7 +16,7 @@ public class ZombieRioter : Zombie
 
     }
 
-    protected override Move()
+    protected override void Move()
     {
         LookPlayer();
         transform.RotateAround(playerTransform.position, Vector3.up, 2f * Time.deltaTime);
